@@ -1,0 +1,101 @@
+<%- include('partials/header') %>
+
+<script src="https://unpkg.com/js-year-calendar@latest/dist/js-year-calendar.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/js-year-calendar@latest/dist/js-year-calendar.min.css" />
+<div id="calendar" data-provide="calendar"></div>
+
+
+
+
+<div class="container-fluid">
+    
+   
+    
+
+    <h1>Movie details</h1>
+    <p>testresult: <%= test %></p>
+    <p>res2: <%= test2 %></p>
+    <p>testresult: <%= start %>  <%= end %></p>
+
+   
+    <p><img src="/images/<%= video.img %>"/></p>
+
+    <p>Title: <%= video.title %></p>
+    <p>Genre: <%= video.genre %></p>
+    <p>Description: <%= video.description %></p>
+    <p>working: <%= video.working_hours %></p>
+  
+    <% video.appointments.forEach(function(apt){ %>
+
+        <p>working: <%= apt.date %></p>
+
+        <%}); %>
+
+
+    <select id="select">
+        
+    </select>
+
+    <div>
+    </br>
+    <a href="/appointments/new" class="btn btn-primary btn-lg" type="button">Book Appointment</a>
+
+   </div>
+
+
+
+<p>
+</br>
+<a href="/videos">Back to list</a>
+
+</p>
+</div>
+
+
+
+
+<script>
+
+    let working_hours = '<%-video.working_hours%>' ;
+    let appointments = '<%-video.appointments%>' ;
+       //console.log(working_hours);
+    
+      
+
+       let avail_appointments = [];
+       
+ 
+
+document.getElementById("calendar").addEventListener('clickDay', function(e) {
+    console.log('Click on day ' + e.date.toString());
+      // console.log(getAvailableAppointments("10-10-2022"));
+
+});   
+
+var select = document.getElementById("select");
+
+var arr = '<%- test %>';
+arr = arr.split(",");
+console.log('<%-video._id%>');
+console.log(arr.length);
+for(var i = 0; i < arr.length; i++)
+{
+
+var option = document.createElement("OPTION"),
+txt = document.createTextNode(arr[i]);
+option.appendChild(txt);
+option.setAttribute("value",arr[i]);
+select.insertBefore(option,select.lastChild);
+}
+
+
+ </script>
+
+
+
+
+
+
+
+<%- include('partials/footer') %>
