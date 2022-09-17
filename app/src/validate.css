@@ -1,0 +1,8 @@
+.error {
+	background: #fcc;
+	border: 2px solid #c99;
+	color: red;
+}
+.error_span_class{
+	color: red;
+}

@@ -1,0 +1,72 @@
+[
+    {"_id" : 1,
+     "name" : "Rosa",
+     "subject": "Maths",
+     "rating" : "5.0",
+     "about_me" : "I am a Maths Tutor for the past 40 years. Please reach out to me for any queries",
+     "working_hours": "10AM-06PM",
+     "appointments":[
+     { "date" : "5-1-2022",
+        "time" :  ["10AM","11AM", "12PM"]
+     },
+       { "date" : "5-2-2022",
+        "time" :  ["11AM","12PM"]
+     }
+    ],
+     "certifications":["International Maths Olympiad", "Postgraduate Certificate in Mathematics", "GMAT"],
+     "image_url": "https://www.unh.edu/unhtoday/sites/default/files/styles/article_huge/public/article/2019/professional_woman_headshot.jpg?itok=3itzxHXh"
+    },
+    {
+     "name" : "Parker",
+     "subject": "Physics",
+     "rating" : "4.9",
+     "about_me" : "I enjoy explaining physcis concepts and theory. I am happy to help you in your learning journey.",
+     "working_hours": "09.00 am - 03.00 pm",
+     "certifications":["Berkeley Physics International Education", "International Medical Physics certification"],
+     "image_url": "https://cdn.fstoppers.com/styles/large-16-9/s3/lead/2019/01/tips-for-professional-portraits.jpg"
+    },
+    {
+     "name" : "Andria",
+     "subject": "English",
+     "rating" : "3.5",
+     "about_me" : "I am an English Tutor. I can help with creative writing as well.",
+     "working_hours": "09.00 am - 01.00 pm",
+     "certifications":["IELTS", "TOEFL", "Duolingo"],
+     "image_url": "https://www.minneapolisheadshots.com/gallery/main/professional-woman1.jpg"
+    },
+      {
+       "name" : "Rosa",
+       "subject": "Maths",
+       "rating" : "5.0",
+       "about_me" : "I am a Maths Tutor for the past 40 years. Please reach out to me for any queries",
+       "working_hours": "10AM-06PM",
+       "appointments":[
+       { "date" : "5-1-2022",
+          "time" :  ["10 AM","11 AM", "12 PM"]
+       },
+         { "date" : "11-10-2022",
+          "time" :  ["11 AM","12 PM"]
+       }
+      ],
+       "certifications":["International Maths Olympiad", "Postgraduate Certificate in Mathematics", "GMAT"],
+       "image_url": "https://www.unh.edu/unhtoday/sites/default/files/styles/article_huge/public/article/2019/professional_woman_headshot.jpg?itok=3itzxHXh"
+      },
+      {
+       "name" : "Parker",
+       "subject": "Physics",
+       "rating" : "4.9",
+       "about_me" : "I enjoy explaining physcis concepts and theory. I am happy to help you in your learning journey.",
+       "working_hours": "09.00 am - 03.00 pm",
+       "certifications":["Berkeley Physics International Education", "International Medical Physics certification"],
+       "image_url": "https://cdn.fstoppers.com/styles/large-16-9/s3/lead/2019/01/tips-for-professional-portraits.jpg"
+      },
+      {
+       "name" : "Andria",
+       "subject": "English",
+       "rating" : "3.5",
+       "about_me" : "I am an English Tutor. I can help with creative writing as well.",
+       "working_hours": "09.00 am - 01.00 pm",
+       "certifications":["IELTS", "TOEFL", "Duolingo"],
+       "image_url": "https://www.minneapolisheadshots.com/gallery/main/professional-woman1.jpg"
+      }
+      ]
